@@ -5,16 +5,16 @@
 Ever wanted to buy something but didn't want to do the market research? So what do you do, you ask a friend what they have, and if they like it or not right?
 So that's Mumlatz. It's an app for social product review sharing. You enter what products you own and if you recommend them, your friends do the same, and you are able to search for prodct recommendations by the people you know and trust. 
 
-Mumlatz was created as an educational project. 
+Mumlatz was created as an educational project to give Junior developers the opportunity to contribute features to a real world app.
 
 ## Some technicalities
 
 This repo was create using [Create T3 Turbo](https://github.com/t3-oss/create-t3-turbo). I suggest checking out their README.
 
-It includes:
-A React Native App using Expo
-A tRPC API
-A Prisma Database 
+It includes:  
+* A React Native App using Expo
+* A tRPC API
+* A Prisma Database 
 
 I know these all sounds new and scary, but don't worry! They're new to me too 🙂
 
