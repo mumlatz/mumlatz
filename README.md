@@ -27,5 +27,6 @@ This project uses `pnpm` as a package manager. Here's [how to install it](https:
 Some other links:
 * A very (very) basic (beginning of a) [mockup](https://excalidraw.com/#json=ImPgbDdM7A-HpHhKQSRIv,5HbrBJxcsV_wsGIIFMUFtw) for the Mumlatz app:
 * Our official [Slack channel](https://join.slack.com/t/slack-bkn2400/shared_invite/zt-1inod2x2e-UZRs7189ueYnwHWwDFwATg)! Please join it
+* Checkout our [Issues page](https://github.com/mumlatz/mumlatz/issues/1) for tasks/discussions
 
 This project is in very early stages, but together we will bring it to life!
