@@ -24,6 +24,13 @@ Here are some links about these technologies:
 
 This project uses `pnpm` as a package manager. Here's [how to install it](https://pnpm.io/installation)
 
+**Important line for repo setup**:
+```
+// run these two commands from the project root
+echo DATABASE_URL=file:./db.sqlite >> packages/db/.env
+pnpm db-push
+```
+
 Some other links:
 * A very (very) basic (beginning of a) [mockup](https://excalidraw.com/#json=ABcN26iP3FddKw3UQZ1Hj,O9w8LK8kxAFyY-jZ1oqzHg) for the Mumlatz app:
 * Our official [Slack channel](https://join.slack.com/t/slack-bkn2400/shared_invite/zt-1inod2x2e-UZRs7189ueYnwHWwDFwATg)! Please join it
