@@ -14,7 +14,7 @@ function defineNextConfig(config) {
   return config;
 }
 
-export default withTM(["@acme/api", "@acme/db"])(
+export default withTM(["@mumlatz/api", "@mumlatz/db"])(
   defineNextConfig({
     reactStrictMode: true,
     swcMinify: true,

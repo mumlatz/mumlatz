@@ -1,5 +1,5 @@
 {
-  "name": "@acme/nextjs",
+  "name": "@mumlatz/nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@acme/api": "*",
-    "@acme/db": "*",
+    "@mumlatz/api": "*",
+    "@mumlatz/db": "*",
     "@tanstack/react-query": "^4.7.2",
     "@trpc/client": "10.0.0-proxy-beta.13",
     "@trpc/next": "10.0.0-proxy-beta.13",
