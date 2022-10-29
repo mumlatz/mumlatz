@@ -1,7 +1,13 @@
-import { SafeAreaView, View, Text, TouchableOpacity, TextInput } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TouchableOpacity,
+  TextInput,
+} from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import type { inferProcedureOutput } from "@trpc/server";
-import type { AppRouter } from "@acme/api";
+import type { AppRouter } from "@mumlatz/api";
 import { trpc } from "../utils/trpc";
 import React from "react";
 
