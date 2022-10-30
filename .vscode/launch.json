@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug scraper",
+      "program": "${workspaceFolder}/packages/scraper/index.ts",
+      "preLaunchTask": "tsc: build - packages/scraper/tsconfig.json",
+      "sourceMaps": true,
+      "smartStep": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "outFiles": ["${workspaceFolder}/packages/scraper/out/**/*.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ]
+}
