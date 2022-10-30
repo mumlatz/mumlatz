@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./out",
+    "rootDir": "./",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
