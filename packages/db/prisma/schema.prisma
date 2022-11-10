@@ -2,16 +2,67 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-    provider = "prisma-client-js"
+  provider = "prisma-client-js"
 }
 
 datasource db {
-    provider = "sqlite"
-    url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
-model Post {
-    id      String @id @default(cuid())
-    title   String
-    content String
+model User {
+  phone      String    @id @unique
+  name       String
+  auth_token String
+  followedBy Follows[] @relation("following")
+  following  Follows[] @relation("follower")
+}
+
+model Follows {
+  follower_id  String
+  following_id String
+  following    User   @relation("following", fields: [following_id], references: [phone])
+  follower     User   @relation("follower", fields: [follower_id], references: [phone])
+
+  @@id([follower_id, following_id])
+}
+
+model Brand {
+  id      Int       @id @unique @default(autoincrement())
+  name    String
+  Product Product[]
+}
+
+model Category {
+  id      Int       @id @unique @default(autoincrement())
+  name    String
+  Product Product[]
+}
+
+model Product {
+  id          Int      @id @unique @default(autoincrement())
+  name        String
+  category_id Int
+  brand_id    Int
+  description String
+  Specs       Specs[]
+  category    Category @relation(fields: [category_id], references: [id])
+  brand       Brand    @relation(fields: [brand_id], references: [id])
+
+  ProductImage ProductImage[]
+}
+
+model ProductImage {
+  product_id Int
+  image      String
+  id         Int     @id @unique @default(autoincrement())
+  product    Product @relation(fields: [product_id], references: [id])
+}
+
+model Specs {
+  id         Int     @id @unique @default(autoincrement())
+  key        String
+  value      String
+  product_id Int
+  product    Product @relation(fields: [product_id], references: [id])
 }
